@@ -14,7 +14,7 @@ const FileFinder = ({tabs, selectedTab, setSelectedTab}) => {
         <div className="flex flex-col items-start mt-1">
           {tabs.map(tab =>
             <button className={'flex items-center text-sm pl-6 py-[2px] hover:bg-superLightGray w-full '.concat(selectedTab === tab.value ? 'bg-superLightGray text-white' : '')} onClick={() => setSelectedTab(tab.value)}>
-              <img className="h-4 w-4 mr-1" src={`/icons/${tab.name.split('.').pop()}.svg`} />
+              <img className="h-4 w-4 mr-1" src={`/icons/${tab.name.split('.').pop()}.svg`} alt="" />
               {tab.name}
             </button>
           )}

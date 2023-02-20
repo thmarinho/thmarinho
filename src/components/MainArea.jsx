@@ -12,7 +12,7 @@ const MainArea = ({ tabs, selectedTab, setSelectedTab }) => {
               onClick={() => setSelectedTab(tab.value)}
               className={'text-gray-500 flex items-center px-3 py-2 text-sm group  '.concat(selectedTab === tab.value ? 'bg-main' : '')}
             >
-              <img className="h-4 w-4 mr-1" src={`/icons/${tab.name.split('.').pop()}.svg`} />
+              <img className="h-4 w-4 mr-1" src={`/icons/${tab.name.split('.').pop()}.svg`} alt="" />
               {tab.name}
               <XMarkIcon className={'h-3 w-3 ml-3 group-hover:text-white '.concat(selectedTab === tab.value ? 'text-white' : 'text-transparent')}/>
             </button>
