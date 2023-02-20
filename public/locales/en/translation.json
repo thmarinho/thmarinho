@@ -1,0 +1,14 @@
+{
+  "current": "en",
+  "navBar": {
+    "switchLanguage": "Passer en français",
+    "switchTheme": "Switch theme",
+    "link": {
+      "profile": "My profile",
+      "mail": "Contact me by email",
+      "linkedin": "My Linkedin",
+      "github": "My GitHub",
+      "setting": "Settings"
+    }
+  }
+}
