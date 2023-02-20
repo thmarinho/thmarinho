@@ -10,5 +10,14 @@
       "github": "Mon github",
       "setting": "Paramètres"
     }
+  },
+  "fileFinder": {
+    "tabs": {
+      "home": "accueil.jsx",
+      "formation": "formation.html",
+      "experiences": "expériences.json",
+      "skills": "compétences.js",
+      "contact": "contact.css"
+    }
   }
 }

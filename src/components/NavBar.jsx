@@ -6,7 +6,7 @@ const NavBar = () => {
   const WithTooltip = ({ children, className, text }) => (
     <Icon className={'group relative '.concat(className)}>
       {children}
-      <span className="hidden group-hover:block absolute left-12 w-max bg-fileFinder px-3 py-1 text-sm text-gray-500 shadow-md rounded border-r-[1px] md:border-r-0 border-gray-900">{text}</span>
+      <span className="hidden group-hover:block absolute left-12 w-max bg-navBar px-3 py-1 text-sm text-gray-500 shadow-xl rounded border-r-1 md:border-r-0 border-gray-900">{text}</span>
     </Icon>
   )
 
@@ -22,7 +22,7 @@ const NavBar = () => {
 
 
   return (
-    <div className="bg-navBar h-full w-12 flex flex-col items-center justify-between text-gray-600 border-r-[1px] border-gray-900">
+    <div className="bg-navBar h-full w-12 flex flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
       <div className="w-full">
         <WithTooltip text={t('navBar.link.profile')} className="border-l-2 border-yellow-400">
           <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">

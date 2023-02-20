@@ -16,6 +16,12 @@ module.exports = {
         main: {
           DEFAULT: "#242936",
         },
+        superLightGray: {
+          DEFAULT: "#80808040"
+        }
+      },
+      borderWidth: {
+        1: "1px",
       }
     },
   },
