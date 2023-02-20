@@ -11,11 +11,7 @@ const NavBar = () => {
   )
 
   const Icon = ({ children, className = "" }) => (
-    <div className={' \
-      w-full aspect-square \
-      hover:text-gray-500 \
-      flex justify-center items-center \
-    '.concat(className)}>
+    <div className={"w-full aspect-square hover:text-gray-500 flex justify-center items-center ".concat(className)}>
       {children}
     </div>
   );
