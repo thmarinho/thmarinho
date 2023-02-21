@@ -22,6 +22,12 @@ module.exports = {
       },
       borderWidth: {
         1: "1px",
+      },
+      minWidth: {
+        12: "3rem"
+      },
+      fontSize: {
+        "md": ["0.9375rem", "22px"],
       }
     },
   },

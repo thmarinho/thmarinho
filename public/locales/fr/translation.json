@@ -17,7 +17,15 @@
       "formation": "formation.html",
       "experiences": "expériences.json",
       "skills": "compétences.js",
-      "contact": "contact.css"
+      "contact": "contact.css",
+      "notepad": "bloc_note.txt"
     }
+  },
+  "contact": {
+    "website": "Site internet",
+    "email": "Email",
+    "github": "HitHub",
+    "linkedin": "Linkedin",
+    "phone": "Téléphone"
   }
 }
