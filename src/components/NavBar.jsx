@@ -1,5 +1,5 @@
 import { useTranslation } from "react-i18next";
-import { ArrowDownTrayIcon, Cog8ToothIcon, EnvelopeIcon, FolderIcon, UserCircleIcon } from "@heroicons/react/24/outline"
+import { Cog8ToothIcon, EnvelopeIcon, FolderIcon } from "@heroicons/react/24/outline"
 
 const NavBar = () => {
   const { t, i18n } = useTranslation()
