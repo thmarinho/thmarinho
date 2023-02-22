@@ -22,6 +22,11 @@
       "notepad": "free_notepad.txt"
     }
   },
+  "home": {
+    "job": "Fullstack WEB developer",
+    "projects": "My projects",
+    "contact": "Contact me"
+  },
   "contact": {
     "website": "Website",
     "email": "Email",

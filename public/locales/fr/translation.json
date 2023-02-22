@@ -22,6 +22,11 @@
       "notepad": "bloc_note.txt"
     }
   },
+  "home": {
+    "job": "Développeur WEB fullstack",
+    "projects": "Mes projets",
+    "contact": "Me contacter"
+  },
   "contact": {
     "website": "Site internet",
     "email": "Email",
