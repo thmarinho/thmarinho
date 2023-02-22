@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/public/hero.webp')",
+      },
       colors: {
         navBar: {
           DEFAULT: "#242936",
@@ -18,7 +21,13 @@ module.exports = {
         },
         superLightGray: {
           DEFAULT: "#80808040"
-        }
+        },
+        ayu: {
+          yellow: "#eed173",
+          green: "#d5ff80",
+          blue: "#95e6cb",
+          orange: "#f29e74",
+        },
       },
       borderWidth: {
         1: "1px",
