@@ -18,7 +18,7 @@
       "experiences": "expériences.json",
       "skills": "compétences.js",
       "contact": "contact.css",
-      "project": "mes_projets.md",
+      "project": "projets.md",
       "notepad": "bloc_note.txt"
     }
   },
@@ -28,11 +28,12 @@
     "contact": "Me contacter"
   },
   "contact": {
-    "website": "Site internet",
+    "title": "Me contacter",
+    "socials": "réseaux",
+    "website": "Site",
     "email": "Email",
-    "github": "HitHub",
-    "linkedin": "Linkedin",
-    "phone": "Téléphone"
+    "github": "GitHub",
+    "linkedin": "Linkedin"
   },
   "jobs": {
     "title": "Mes expériences passées",
@@ -66,6 +67,7 @@
     }
   },
   "skills": {
+    "title": "Mes compétences",
     "frontend": "Frontend",
     "css": "Feuilles de style",
     "backend": "Backend",
