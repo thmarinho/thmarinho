@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Experiences = () => {
-  const { t } = useTranslation()
+  const { i18n, t } = useTranslation()
 
   /*
     {
@@ -33,8 +33,8 @@ const Experiences = () => {
       hidden: false,
     },
     {
-      company: "Indépendant",
-      job: t('jobs.freelance.job'),
+      company: t('jobs.freelance.job'),
+      job: null,
       description: t('jobs.freelance.description'),
       startDate: "02/2022",
       endDate: "08/2022",
@@ -49,14 +49,6 @@ const Experiences = () => {
       hidden: false,
     },
     {
-      company: "MSA Ain Rhône",
-      job: t('jobs.msa.job'),
-      description: t('jobs.msa.description'),
-      startDate: "08/2021",
-      endDate: "08/2021",
-      hidden: false,
-    },
-    {
       company: "Epitech",
       job: t('jobs.epitech.job'),
       description: t('jobs.epitech.description'),
@@ -65,7 +57,7 @@ const Experiences = () => {
       hidden: false,
     },
     {
-      company: "padoa",
+      company: "Padoa",
       job: t('jobs.padoa.job'),
       description: t('jobs.padoa.description'),
       startDate: "09/2018",
@@ -85,18 +77,18 @@ const Experiences = () => {
           </div>
           <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
             <div className="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-2 before:bg-gray-700">
-              {JOBS.filter(job => !job.hidden).map(job => (
-                <div key={job.company.toLocaleLowerCase()} className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-ayu-yellow">
+              {JOBS.filter(job => !job.hidden).map((job, idx) => (
+                <div key={idx} className="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:rounded-full sm:before:left-[-35px] sm:before:z-[1] before:bg-ayu-yellow">
                   <h3>
                     <span className="text-xl font-semibold">
                       {job.company}
                     </span>
                     <span className="italic">
-                      {` - ${job.job}`}
+                      {job.job && ` - ${job.job}`}
                     </span>
                   </h3>
                   <time className="text-xs tracking-wide uppercase text-gray-400">{job.startDate} - {job.endDate}</time>
-                  <p className="mt-3">{job.description}</p>
+                  <p className="mt-3 whitespace-pre-wrap">{job.description}</p>
                 </div>
 
               ))}

@@ -16,7 +16,7 @@ const Skills = () => {
     ],
     backend: [
       { name: 'TypeScript', icon: 'typescript.svg' },
-      { name: 'Node.js', icon: 'javascript.svg' },
+      { name: 'JavaScript', icon: 'javascript.svg' },
       { name: 'Python', icon: 'python.svg' },
       { name: 'PHP', icon: 'php.svg' },
       { name: '.NET', icon: 'dotnet.svg' },
@@ -46,7 +46,7 @@ const Skills = () => {
         <div className="grid gap-4 mx-4 sm:grid-cols-12">
           <div className="col-span-12 sm:col-span-3">
             <div className="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
-              <h3 className="text-3xl font-semibold">{t('skills.title')}</h3>
+              <h1 className="text-3xl font-semibold">{t('skills.title')}</h1>
             </div>
           </div>
           <div className="relative col-span-12 px-4 space-y-6 sm:col-span-9">
@@ -54,13 +54,13 @@ const Skills = () => {
               {Object.keys(SKILLS).map((category, idx) => (
                 <div key={idx}>
                   <div className="text-center sm:text-left mb-3">
-                    <h3 className="text-3xl font-semibold">{t(`skills.${category}`)}</h3>
+                    <h2 className="text-3xl font-semibold">{t(`skills.${category}`)}</h2>
                   </div>
                   <div className="flex flex-wrap mt-0">
                     {SKILLS[category].map(skill => (
                       <div key={skill.name} className="flex m-2 flex-col h-28 aspect-square justify-center items-center rounded-md shadow-md hover:scale-110  transition duration-200 bg-gray-700">
                         <img className="h-12 aspect-square" src={`/skills/${skill.icon}`} alt="" />
-                        <h2 className="text-center mt-2 italic text-sm">{skill.name}</h2>
+                        <h3 className="text-center mt-2 italic text-sm">{skill.name}</h3>
                       </div>
                     ))}
                   </div>
