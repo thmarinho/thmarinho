@@ -1,6 +1,7 @@
-import { useTranslation } from "react-i18next";
+// import { useTranslation } from "react-i18next";
 
 const Contact = () => {
+  /*
   const { t } = useTranslation()
 
   const SOCIALS = [
@@ -9,7 +10,7 @@ const Contact = () => {
     { name: 'github', link: 'https://github.com/thmarinho', value: 'thmarinho' },
     { name: 'linkedin', link: 'https://linkedin.com/in/thmarinho', value: 'thmarinho' },
   ]
-
+*/
   return (
     <div className="h-full">
       contact

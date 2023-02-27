@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 const Experiences = () => {
-  const { i18n, t } = useTranslation()
+  const { t } = useTranslation()
 
   /*
     {
