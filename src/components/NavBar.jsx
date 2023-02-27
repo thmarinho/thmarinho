@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Cog8ToothIcon, EnvelopeIcon, FolderIcon } from "@heroicons/react/24/outline"
 
-const NavBar = () => {
+const NavBar = ({ toggleExplorer, explorerOpen }) => {
   const { t, i18n } = useTranslation()
 
   const WithTooltip = ({ children, className, text }) => (
@@ -39,9 +39,11 @@ const NavBar = () => {
   return (
     <div className="bg-navBar h-full min-w-12 w-12 flex flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
       <div className="w-full">
-        <WithTooltip text={t('navBar.link.profile')} className="md:border-l-2 border-ayu-yellow">
-          <FolderIcon className="w-6 h-6" strokeWidth="2" />
-        </WithTooltip>
+        <button onClick={toggleExplorer} className="w-full aspect-square flex items-center justify-center">
+          <WithTooltip text={t('navBar.link.profile')} className={explorerOpen ? 'md:border-l-2 border-ayu-yellow' : ''}>
+            <FolderIcon className="w-6 h-6" strokeWidth="2" />
+          </WithTooltip>
+        </button>
         <WithTooltip text={t('navBar.link.github')}>
           <a href="https://github.com/thmarinho" target="_blank" rel="noreferrer">
             <svg className="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">

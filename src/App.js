@@ -15,6 +15,8 @@ import './Reset.css'
 function App() {
   const { t } = useTranslation()
 
+  const [explorerOpen, setExplorerOpen] = useState(true)
+
   const openTab = (tabValue) => {
     setClosedTabs(old => old.filter(tab => tab !== tabValue))
     setSelectedTab(tabValue)
@@ -49,8 +51,8 @@ function App() {
 
   return (
     <div className="h-screen w-screen flex">
-      <NavBar />
-      <FileFinder tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} />
+      <NavBar toggleExplorer={() => setExplorerOpen(old => !old)} explorerOpen={explorerOpen} />
+      {explorerOpen && <FileFinder tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} />}
       <MainArea tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} closeTab={closeTab} closedTabs={closedTabs} />
     </div>
   );
