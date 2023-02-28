@@ -71,5 +71,16 @@
     "database": "Data handling",
     "test": "Tests",
     "devops": "DevOps"
+  },
+  "projects": {
+    "title": "Projects",
+    "maskott": {
+      "name": "RGAA compliance",
+      "description": "The RGAA standard (Référentiel Général d'Accessibilité pour les Administrations) is a set of rules and good practices designed to make websites and applications accessible to all, including people with disabilities.\n\nThis standard defines accessibility criteria related to navigation, content presentation, colours and contrast, as well as the use of assistive technologies (screen readers, specific keyboards, etc.).\n\nThe objective of the RGAA standard is to ensure equal opportunities by allowing all users to access all content and functionalities offered on websites and applications.\n\n💻 Frontend : Reacts.js / Knockout.js / SCSS\n🧱 Backend: ASP .NET 4.8 / .NET CORE 2.2\n💾 Database: MongoDB / MSSQL Server\n🔗 Outils: Notion / Jira"
+    },
+    "vincipit": {
+      "name": "End study project",
+      "description": "Creation of a SaaS application and a box for event professionals to configure and monitor ephemeral networks - winning project in 2020 and vice winner in 2022 in Lyon\n\t\t• Fullstack development\n\t\t• Embedded development\n\t\t• Technical decisions\n\t\t• Team and project management\n\t\t• Protocol creation and integration\n\t\t• Technical training of the team\n\t\t• Implementation of Agile methodology\n\t\t• Creation of mock-ups\n\n💻 Frontend: React.js / Next.js / Vue.js / CSS / SCSS / TailwindCSS\n🧱 Backend : Nest.js / TypeScript / Node.js / Python / GraphQL\n💾 Database: Mongoose / Redis / SQL\n🛠️ DevOps: RabbitMQ / Docker / Grafana / CI/CD\n🌐 Deployment: Azure / Digital Ocean / Vercel / Netlify / NGINX\n🔗 Tools: Notion / Jira / GitHub Projects / Figma / LucidCharts"
+    }
   }
 }

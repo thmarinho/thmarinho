@@ -70,5 +70,16 @@
     "database": "Gestion des données",
     "test": "Tests",
     "devops": "DevOps"
+  },
+  "projects": {
+    "title": "Projets",
+    "maskott": {
+      "name": "Mise en conformité RGAA",
+      "description": "La norme RGAA (Référentiel Général d'Accessibilité pour les Administrations) est un ensemble de règles et de bonnes pratiques destinées à rendre les sites web et les applications accessibles à tous, y compris aux personnes en situation de handicap.\n\nCette norme définit notamment des critères d'accessibilité liés à la navigation, à la présentation des contenus, aux couleurs et au contraste, ainsi qu'à l'utilisation des technologies d'assistance (lecteurs d'écran, claviers spécifiques, etc.).\n\nL'objectif de la norme RGAA est d'assurer l'égalité des chances en permettant à tous les utilisateurs d'accéder à l'ensemble des contenus et des fonctionnalités proposés sur les sites web et les applications.\n\n💻 Frontend : Reacts.js / Knockout.js / SCSS\n🧱 Backend : ASP .NET 4.8 / .NET CORE 2.2\n💾 Base de données: MongoDB / MSSQL Server\n🔗 Outils: Notion / Jira"
+    },
+    "vincipit": {
+      "name": "Projet de fin d'études",
+      "description": "Création d’une application SaaS et d’un boîtier à destination des professionnels de l’événementiel permettant de faire de la configuration et de la surveillance de réseaux éphémères - projet lauréat en 2020 et vice lauréat en 2022 à Lyon\n\t\t• Développement fullstack\n\t\t• Développement embarqué\n\t\t• Décisions techniques\n\t\t• Gestion de l’équipe et du projet\n\t\t• Création et intégration de protocoles\n\t\t• Formation technique de l’équipe\n\t\t• Mise en place de méthodologie Agile\n\t\t• Création de maquettes\n\n💻 Frontend: React.js / Next.js / Vue.js / CSS / SCSS / TailwindCSS\n🧱 Backend : Nest.js / TypeScript / Node.js / Python / GraphQL\n💾 Base de données: Mongoose / Redis / SQL\n🛠️ DevOps: RabbitMQ / Docker / Grafana / CI/CD\n🌐 Déploiement: Azure / Digital Ocean / Vercel / Netlify / NGINX\n🔗 Outils: Notion / Jira / GitHub Projects / Figma / LucidCharts"
+    }
   }
 }
