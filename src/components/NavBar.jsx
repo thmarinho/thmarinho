@@ -37,7 +37,7 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
   }
 
   return (
-    <div className="bg-navBar h-full min-w-12 w-12 flex flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
+    <div className="bg-navBar h-full min-w-12 w-12 hidden md:flex flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
       <div className="w-full">
         <button onClick={toggleExplorer} className="w-full aspect-square flex items-center justify-center">
           <WithTooltip text={t('navBar.link.profile')} className={explorerOpen ? 'md:border-l-2 border-ayu-yellow' : ''}>
