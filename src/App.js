@@ -50,7 +50,7 @@ function App() {
   const [closedTabs, setClosedTabs] = useState([])
 
   return (
-    <div className="h-screen w-screen flex">
+    <div className="h-screen w-screen flex flex-col-reverse sm:flex-row">
       <NavBar toggleExplorer={() => setExplorerOpen(old => !old)} explorerOpen={explorerOpen} />
       {explorerOpen && <FileFinder tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} />}
       <MainArea tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} closeTab={closeTab} closedTabs={closedTabs} />

@@ -12,7 +12,7 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
   )
 
   const Icon = ({ children, className = "" }) => (
-    <div className={"w-full aspect-square hover:text-gray-500 flex justify-center items-center ".concat(className)}>
+    <div className={"sm:w-full sm:aspect-square hover:text-gray-500 flex justify-center items-center ".concat(className)}>
       {children}
     </div>
   );
@@ -37,9 +37,9 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
   }
 
   return (
-    <div className="bg-navBar h-full min-w-12 w-12 hidden md:flex flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
-      <div className="w-full">
-        <button onClick={toggleExplorer} className="w-full aspect-square flex items-center justify-center">
+    <div className="bg-navBar min-w-12 h-12 sm:h-full sm:w-12 flex sm:flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
+      <div className="w-full flex sm:block justify-evenly sm:justify-start">
+        <button onClick={toggleExplorer} className="sm:w-full sm:aspect-square flex items-center justify-center">
           <WithTooltip text={t('navBar.link.profile')} className={explorerOpen ? 'md:border-l-2 border-ayu-yellow' : ''}>
             <FolderIcon className="w-6 h-6" strokeWidth="2" />
           </WithTooltip>
@@ -58,8 +58,13 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
             </svg>
           </a>
         </WithTooltip>
+        <WithTooltip text={t('navBar.link.mail')} className="block sm:hidden">
+          <a href="mailto:thmarinho@outlook.fr" target="_blank" rel="noreferrer">
+            <EnvelopeIcon className="w-6 h-6" strokeWidth="2" />
+          </a>
+        </WithTooltip>
       </div>
-      <div className="w-full">
+      <div className="w-full hidden sm:block">
         <WithTooltip text={t('navBar.link.mail')}>
           <a href="mailto:thmarinho@outlook.fr" target="_blank" rel="noreferrer">
             <EnvelopeIcon className="w-6 h-6" strokeWidth="2" />
