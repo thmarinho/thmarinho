@@ -37,7 +37,7 @@ const Projects = () => {
   ];
 
   const Card = ({ project }) => (
-    <div className="w-full min-w-fit h-auto lg:w-auto lg:h-[90%] lg:min-h-fit rounded-lg my-2 mb-3 lg:first:ml-12 lg:last:mr-12 bg-gray-700 p-4 md:p-10 lg:flex">
+    <div className="w-full min-w-fit  lg:w-auto lg:min-h-fit rounded-lg my-2 mb-3 lg:first:ml-12 lg:last:mr-12 bg-gray-700 p-4 md:p-10 lg:flex">
       <div className="w-full lg:w-[55rem] flex">
         <div className="hidden lg:flex items-center flex-col justify-between w-1/3">
           <div className="w-full aspect-square p-4 flex justify-center items-center">
@@ -49,11 +49,13 @@ const Projects = () => {
           <div>
             <div className="flex items-center mb-8">
               <img src={project.cover} className="block lg:hidden w-20" alt="" />
-              <h2 className="ml-8 lg:ml-0 text-2xl font-semibold">{project.name}</h2>
-              <span className="mx-2 font-normal text-base">-</span>
-              <a href={project.link} className="italic text-base hover:underline font-normal flex items-center">
-                {project.company}
-              </a>
+              <div className="flex flex-col lg:items-center lg:flex-row ml-4 lg:ml-0">
+                <h2 className="text-lg md:text-2xl font-semibold">{project.name}</h2>
+                <span className="mx-2 font-normal text-base hidden lg:block">-</span>
+                <a href={project.link} className="italic text-base hover:underline font-normal flex items-center">
+                  {project.company}
+                </a>
+              </div>
             </div>
             <p className="w-full whitespace-pre-wrap text-justify">{project.description}</p>
           </div>
@@ -68,8 +70,8 @@ const Projects = () => {
       <div className="p-8 md:p-12 text-center sm:text-left before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
         <h1 className="text-3xl font-semibold">{t('projects.title')}</h1>
       </div>
-      <div className="flex-grow flex max-w-full mb-4">
-        <div className="h-full w-full lg:py-10 px-2 md:px-4 lg:px-0 flex flex-col lg:flex-row overflow-y-scroll overflow-x-hidden lg:overflow-y-hidden lg:overflow-x-scroll gap-8">
+      <div className="flex-grow flex max-w-full mb-4 h-fit">
+        <div className="h-full w-full lg:pb-10 px-2 md:px-4 lg:px-0 flex flex-col lg:flex-row overflow-y-scroll overflow-x-hidden lg:overflow-y-hidden lg:overflow-x-scroll gap-8">
           {projects.map((project, idx) => <Card key={idx} project={project} />)}
         </div>
       </div>

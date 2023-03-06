@@ -10,8 +10,8 @@ const Home = ({ navigate }) => {
         <h1 className="text-3xl sm:text-5xl md:text-7xl font-extrabold ">Théo Marinho</h1>
         <h2 className="text-xl sm:text-2xl md:text-3xl font-thin tracking-tighter">{t('home.job')}</h2>
         <div className="mt-4 gap-4 flex flex-wrap">
-          <button onClick={() => navigate('projects')} className="hover:scale-105 text-lg transition duration-200 px-2 py-1 md:px-4 md:py-2 rounded-md bg-ayu-orange font-extrabold">{t('home.projects')}</button>
-          <button onClick={() => navigate('contact')} className="hover:scale-105 text-lg transition duration-200 px-2 py-1 md:px-4 md:py-2 rounded-md border-2 border-ayu-orange md:ml-4">{t('home.contact')}</button>
+          <button onClick={() => navigate('projects')} className="hover:scale-105 text-lg transition duration-200 px-2 py-1 md:px-4 md:py-2 rounded-md bg-white border-4 border-ayu-yellow text-black font-extrabold">{t('home.projects')}</button>
+          <button onClick={() => navigate('contact')} className="hover:scale-105 text-lg transition duration-200 px-2 py-1 md:px-4 md:py-2 rounded-md border-2 border-ayu-yellow md:ml-4">{t('home.contact')}</button>
         </div>
       </div>
     </div>

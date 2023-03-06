@@ -1,7 +1,7 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
 
 const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) => {
-  const NO_PADDING_TABS = ['profile', 'notepad', 'projects'];
+  const NO_PADDING_TABS = ['profile', 'notepad', 'projects', 'skills'];
 
   const Tab = ({ tab }) => (
     <div
@@ -30,7 +30,7 @@ const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) =
           {tabs.filter(tab => !closedTabs.includes(tab.value)).map(tab => <Tab key={tab.value} tab={tab} />)}
         </div>
         <div className={'flex-grow h-1 '.concat(NO_PADDING_TABS.includes(selectedTab) ? '' : 'p-4')}>
-          {tabs.find(tab => tab.value === selectedTab)?.component || <div>default</div>}
+          {tabs.find(tab => tab.value === selectedTab)?.component || tabs[0].component}
         </div>
       </div>
     </div>

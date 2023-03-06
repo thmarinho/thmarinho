@@ -39,7 +39,7 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
   return (
     <div className="bg-navBar min-w-12 h-12 sm:h-full sm:w-12 flex sm:flex-col items-center justify-between text-gray-600 border-r-1 border-gray-900">
       <div className="w-full flex sm:block justify-evenly sm:justify-start">
-        <button onClick={toggleExplorer} className="sm:w-full sm:aspect-square flex items-center justify-center">
+        <button onClick={toggleExplorer} className="sm:w-full sm:aspect-square items-center justify-center hidden sm:flex">
           <WithTooltip text={t('navBar.link.profile')} className={explorerOpen ? 'md:border-l-2 border-ayu-yellow' : ''}>
             <FolderIcon className="w-6 h-6" strokeWidth="2" />
           </WithTooltip>
