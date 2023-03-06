@@ -23,7 +23,7 @@ module.exports = {
           DEFAULT: "#80808040"
         },
         ayu: {
-          yellow: "#eed173",
+          yellow: "#e6b450",
           green: "#d5ff80",
           blue: "#95e6cb",
           orange: "#f29e74",
