@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) => {
   const { t } = useTranslation()
-  const NO_PADDING_TABS = ['profile', 'notepad', 'projects', 'skills', 'experiences'];
 
   const Tab = ({ tab }) => (
     <div
@@ -32,7 +31,7 @@ const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) =
         <div className="flex bg-fileFinder border-b-1 border-gray-900 overflow-x-auto min-h-fit">
           {tabs.filter(tab => !closedTabs.includes(tab.value)).map(tab => <Tab key={tab.value} tab={tab} />)}
         </div>
-        <div className={'flex-grow h-1 '.concat(NO_PADDING_TABS.includes(selectedTab) ? '' : 'p-4')}>
+        <div className="flex-grow h-1">
           {tabs.find(tab => tab.value === selectedTab)?.component || tabs[0].component}
         </div>
       </div>
