@@ -1,7 +1,9 @@
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { useTranslation } from "react-i18next";
 
 const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) => {
-  const NO_PADDING_TABS = ['profile', 'notepad', 'projects', 'skills'];
+  const { t } = useTranslation()
+  const NO_PADDING_TABS = ['profile', 'notepad', 'projects', 'skills', 'experiences'];
 
   const Tab = ({ tab }) => (
     <div
@@ -15,6 +17,7 @@ const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) =
         {tab.name}
       </button>
       <button
+        title={t('fileFinder.tabs.close')}
         onClick={() => closeTab(tab.value)}
         className="mx-3 group-hover:text-white"
       >

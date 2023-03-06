@@ -19,7 +19,8 @@
       "skills": "skills.js",
       "contact": "contact.css",
       "project": "projects.md",
-      "notepad": "free_notepad.txt"
+      "notepad": "free_notepad.txt",
+      "close": "Close tab"
     }
   },
   "home": {

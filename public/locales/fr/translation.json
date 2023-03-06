@@ -19,7 +19,8 @@
       "skills": "compétences.js",
       "contact": "contact.css",
       "project": "projets.md",
-      "notepad": "bloc_note.txt"
+      "notepad": "bloc_note.txt",
+      "close": "Fermer l'onglet"
     }
   },
   "home": {
