@@ -7,7 +7,7 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
   const WithTooltip = ({ children, className, text }) => (
     <Icon className={'group relative '.concat(className)}>
       {children}
-      <span className="hidden group-hover:block absolute left-12 w-max bg-navBar px-3 py-1 text-sm text-gray-500 shadow-xl rounded border-r-1 md:border-r-0 border-gray-900">{text}</span>
+      <span className="hidden md:group-hover:block absolute left-12 w-max bg-navBar px-3 py-1 text-sm text-gray-500 shadow-xl rounded border-r-1 md:border-r-0 border-gray-900">{text}</span>
     </Icon>
   )
 

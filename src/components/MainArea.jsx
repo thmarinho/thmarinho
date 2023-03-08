@@ -6,19 +6,19 @@ const MainArea = ({ tabs, selectedTab, setSelectedTab, closeTab, closedTabs }) =
 
   const Tab = ({ tab }) => (
     <div
-      className={'flex text-gray-500 group border-t-2 border-transparent '.concat(selectedTab === tab.value ? 'bg-main text-white' : 'hover:border-ayu-yellow')}
+      className={'flex text-gray-500 group border-t-2 border-transparent px-3 py-2 '.concat(selectedTab === tab.value ? 'bg-main text-white' : 'hover:border-ayu-yellow')}
     >
       <button
         onClick={() => setSelectedTab(tab.value)}
-        className="flex items-center ml-3 my-2 text-md"
+        className="flex items-center text-md min-w-max"
       >
         <img className="h-5 aspect-square pr-2" src={`/icons/${tab.name.split('.').pop()}.svg`} alt="" />
-        {tab.name}
+        <span className="min-w-fit">{tab.name}</span>
       </button>
       <button
         title={t('fileFinder.tabs.close')}
         onClick={() => closeTab(tab.value)}
-        className="mx-3 group-hover:text-white"
+        className="ml-3 group-hover:text-white hidden sm:inline"
       >
         <XMarkIcon className="h-3.5 aspect-square" />
       </button>
