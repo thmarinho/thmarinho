@@ -1,5 +1,6 @@
 import { useFormik } from "formik";
 import { useTranslation } from "react-i18next";
+import Title from "../Title";
 
 const Contact = () => {
   const { t } = useTranslation()
@@ -31,9 +32,7 @@ const Contact = () => {
   return (
     <div className="h-full max-w-7xl mx-auto flex flex-col lg:flex-row text-white pt-8 overflow-y-auto">
       <div className="lg:w-1/2 px-2 md:px-4 lg:px-6 mb-6">
-        <div className="text-center sm:text-left mb-14 md:ml-8 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
-          <h1 className="text-3xl font-semibold">{t('contact.title')}</h1>
-        </div>
+        <Title text={t('contact.title')}/>
         <div className="h-8 bg-gray-300 rounded-t-lg flex justify-between px-4 items-center">
           <div className="italic text-gray-800">Terminal</div>
           <div className="flex gap-1">
@@ -63,9 +62,7 @@ const Contact = () => {
         </code>
       </div>
       <div className="lg:w-1/2 mb-6">
-        <div className="text-center sm:text-left mb-14 md:ml-8 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
-          <h1 className="text-3xl font-semibold">{t('contact.form.fill')}</h1>
-        </div>
+        <Title text={t('contact.form.fill')} />
         <form onSubmit={formik.handleSubmit} className="flex flex-col gap-4 px-2 md:px-4 lg:px-6 lg:border-l-2 border-ayu-yellow">
           <div className="flex flex-col md:flex-row gap-4 w-full">
             <div className="md:w-1/2">

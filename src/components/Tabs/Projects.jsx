@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Title from "../Title";
 
 const Projects = () => {
   const { t } = useTranslation();
@@ -66,10 +67,8 @@ const Projects = () => {
   );
 
   return (
-    <div className="text-white flex flex-col h-full overflow-y-scroll lg:overflow-y-auto">
-      <div className="p-8 md:p-12 text-center sm:text-left before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
-        <h1 className="text-3xl font-semibold">{t('projects.title')}</h1>
-      </div>
+    <div className="text-white flex flex-col h-full overflow-y-scroll lg:overflow-y-auto pt-_ md:pt-12">
+      <Title text={t('projects.title')} />
       <div className="flex-grow flex max-w-full mb-4 h-fit">
         <div className="h-full w-full lg:pb-10 px-2 md:px-4 lg:px-0 flex flex-col lg:flex-row overflow-y-scroll overflow-x-hidden lg:overflow-y-hidden lg:overflow-x-scroll gap-8">
           {projects.map((project, idx) => <Card key={idx} project={project} />)}

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import Title from "../Title";
 
 const Experiences = () => {
   const { t } = useTranslation()
@@ -70,9 +71,7 @@ const Experiences = () => {
     <section className="text-white max-h-full overflow-y-auto mx-1 md:mx-4 md:pt-4">
       <div className="max-w-6xl px-2 md:px-4 py-12 mx-auto">
         <div className="flex flex-col lg:flex-row">
-          <div className="text-center sm:text-left mb-14 md:ml-8 before:block before:w-24 before:h-3 before:mb-5 before:rounded-md before:mx-auto sm:before:mx-0 before:bg-ayu-yellow">
-            <h1 className="text-3xl font-semibold">{t('jobs.title')}</h1>
-          </div>
+          <Title text={t('jobs.title')} />
           <div className="px-6 space-y-6">
             <div className="relative px-4 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-2 before:bg-gray-700">
               {JOBS.filter(job => !job.hidden).map((job, idx) => (
