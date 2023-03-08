@@ -37,6 +37,14 @@ module.exports = {
       },
       fontSize: {
         "md": ["0.9375rem", "22px"],
+      },
+      animation: {
+        blink: 'blink 1s step-start infinite'
+      },
+      keyframes: {
+        blink: {
+          '50%': {'opacity': '0'}
+        }
       }
     },
   },

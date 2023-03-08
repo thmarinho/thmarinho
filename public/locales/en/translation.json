@@ -34,7 +34,15 @@
     "website": "Website",
     "email": "Email",
     "github": "GitHub",
-    "linkedin": "Linkedin"
+    "linkedin": "Linkedin",
+    "form": {
+      "fill": "Or fill out this form",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "content": "Message",
+      "submit": "Submit"
+    }
   },
   "jobs": {
     "title": "My past experiences",
