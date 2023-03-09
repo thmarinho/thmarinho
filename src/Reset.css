@@ -3,10 +3,16 @@
   border: 0 !important;
 }
 
-.ql-picker-label {
-  color: white !important;
+.ql-picker-label,
+.ql-snow .ql-stroke,
+.ql-editor {
+  stroke: black !important;
+  color: black !important;
 }
 
-.ql-snow .ql-stroke {
-  stroke: white !important
+.dark > * .ql-picker-label,
+.dark > * .ql-snow .ql-stroke,
+.dark > * .ql-editor {
+  stroke: white !important;
+  color: white !important;
 }

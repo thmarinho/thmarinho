@@ -30,7 +30,7 @@ const Contact = () => {
   )
 
   return (
-    <div className="h-full max-w-7xl mx-auto flex flex-col lg:flex-row text-white pt-8 overflow-y-auto">
+    <div className="h-full max-w-7xl mx-auto flex flex-col lg:flex-row dark:text-white pt-8 overflow-y-auto">
       <div className="lg:w-1/2 px-2 md:px-4 lg:px-6 mb-6">
         <Title text={t('contact.title')}/>
         <div className="h-8 bg-gray-300 rounded-t-lg flex justify-between px-4 items-center">
@@ -42,10 +42,13 @@ const Contact = () => {
           </div>
         </div>
         <code className="flex flex-col whitespace-pre-wrap lowercase text-base md:text-xl leading-8 bg-black p-4 rounded-b-2xl">
-          <div>$ cat index.css</div>
-          <div><span className="text-ayu-yellow">.socials</span>{' {'}</div>
+          <div className="text-white">$ cat index.css</div>
+          <div>
+            <span className="text-ayu-yellow">.socials</span>
+            <span className="text-white">{' {'}</span>
+            </div>
           {SOCIALS.map(social => (
-            <div key={social.link}>
+            <div key={social.link} className="text-white">
               <span>
                 <Spacer />
                 <span>{`${social.name}: `}</span>
@@ -54,9 +57,9 @@ const Contact = () => {
               {';'}
             </div>
           ))}
-          <div>{'}'}</div>
+          <div className="text-white">{'}'}</div>
           <div>
-            <span>$</span>
+            <span className="text-white">$</span>
             <span className="ml-2 text-ayu-yellow animate-blink font-extralight">_</span>
           </div>
         </code>
@@ -77,7 +80,7 @@ const Contact = () => {
                   value={formik.values.firstName}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  className="block w-full rounded-md border-gray-300 shadow-sm p-2 text-gray-800"
+                  className="block w-full rounded-md dark:border-gray-300 shadow-md dark:shadow-sm p-2 text-gray-800"
                 />
               </div>
             </div>
@@ -93,7 +96,7 @@ const Contact = () => {
                   value={formik.values.lastName}
                   onChange={formik.handleChange}
                   onBlur={formik.handleBlur}
-                  className="block w-full rounded-md border-gray-300 shadow-sm p-2 text-gray-800"
+                  className="block w-full rounded-md border-gray-300 shadow-md dark:shadow-md p-2 text-gray-800"
                 />
               </div>
             </div>
@@ -110,7 +113,7 @@ const Contact = () => {
                 value={formik.values.email}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                className="block w-full rounded-md border-gray-300 shadow-sm p-2 text-gray-800"
+                className="block w-full rounded-md border-gray-300 shadow-md dark:shadow-sm p-2 text-gray-800"
               />
             </div>
           </div>
@@ -127,7 +130,7 @@ const Contact = () => {
                 value={formik.values.message}
                 onChange={formik.handleChange}
                 onBlur={formik.handleBlur}
-                className="block w-full rounded-md border-gray-300 shadow-sm p-2 text-gray-800"
+                className="block w-full rounded-md border-gray-300 shadow-md dark:shadow-sm p-2 text-gray-800"
               />
             </div>
           </div>

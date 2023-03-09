@@ -16,6 +16,7 @@ function App() {
   const { t } = useTranslation()
 
   const [explorerOpen, setExplorerOpen] = useState(true)
+  const [darkTheme, setDarkTheme] = useState(true)
 
   const openTab = (tabValue) => {
     setClosedTabs(old => old.filter(tab => tab !== tabValue))
@@ -50,8 +51,8 @@ function App() {
   const [closedTabs, setClosedTabs] = useState([])
 
   return (
-    <div className="h-screen w-screen flex flex-col-reverse sm:flex-row">
-      <NavBar toggleExplorer={() => setExplorerOpen(old => !old)} explorerOpen={explorerOpen} />
+    <div className={'h-screen w-screen flex flex-col-reverse sm:flex-row bg-gray-50 text-black dark:text-white '.concat(darkTheme ? 'dark' : 'light')}>
+      <NavBar toggleExplorer={() => setExplorerOpen(old => !old)} explorerOpen={explorerOpen} toggleTheme={() => setDarkTheme(old => !old)} />
       {explorerOpen && <FileFinder tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} />}
       <MainArea tabs={TABS} selectedTab={selectedTab} setSelectedTab={openTab} closeTab={closeTab} closedTabs={closedTabs} />
     </div>

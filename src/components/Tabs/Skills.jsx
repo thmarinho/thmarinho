@@ -42,7 +42,7 @@ const Skills = () => {
   }
 
   return (
-    <section className="text-white max-h-full overflow-y-auto lg:mr-4 lg:pt-4 ">
+    <section className="text-black dark:text-white max-h-full overflow-y-auto lg:mr-4 lg:pt-4 ">
       <div className="max-w-6xl px-4 py-12 mx-auto">
         <div className="flex flex-col lg:flex-row sm:mx-4">
           <Title text={t('skills.title')} />
@@ -54,7 +54,7 @@ const Skills = () => {
                 </div>
                 <div className="flex flex-wrap justify-center lg:justify-start gap-4 lg:w-[90%]">
                   {SKILLS[category].map(skill => (
-                    <div key={skill.name} className="flex flex-col h-28 aspect-square justify-center items-center rounded-md shadow-md hover:scale-110 transition duration-200 bg-gray-700">
+                    <div key={skill.name} className="flex flex-col h-28 aspect-square justify-center items-center rounded-md shadow-md hover:scale-110 transition duration-200 bg-gray-100 dark:bg-gray-700">
                       <img className="h-12 aspect-square" src={`/skills/${skill.icon}`} alt="" />
                       <h3 className="text-center mt-2 italic text-sm">{skill.name}</h3>
                     </div>

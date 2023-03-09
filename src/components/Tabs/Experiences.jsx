@@ -68,12 +68,12 @@ const Experiences = () => {
   ];
 
   return (
-    <section className="text-white max-h-full overflow-y-auto mx-1 md:mx-4 md:pt-4">
+    <section className="dark:text-white max-h-full overflow-y-auto mx-1 md:mx-4 md:pt-4">
       <div className="max-w-6xl px-2 md:px-4 py-12 mx-auto">
         <div className="flex flex-col lg:flex-row">
           <Title text={t('jobs.title')} />
           <div className="px-6 space-y-6">
-            <div className="relative px-4 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-2 before:bg-gray-700">
+            <div className="relative px-4 space-y-8 before:absolute before:top-2 before:bottom-0 before:w-0.5 before:-left-2 before:bg-gray-400 dark:before:bg-gray-700">
               {JOBS.filter(job => !job.hidden).map((job, idx) => (
                 <div key={idx} className="flex flex-col relative before:absolute before:top-2 before:w-4 before:h-4 before:rounded-full before:left-[-34px] before:z-[1] before:bg-ayu-yellow">
                   <h3>
@@ -84,7 +84,7 @@ const Experiences = () => {
                       {job.job && ` - ${job.job}`}
                     </span>
                   </h3>
-                  <time className="text-xs tracking-wide uppercase text-gray-400">{job.startDate} - {job.endDate}</time>
+                  <time className="text-xs tracking-wide uppercase text-gray-900 dark:text-gray-400">{job.startDate} - {job.endDate}</time>
                   <p className="mt-3 whitespace-pre-wrap">{job.description}</p>
                 </div>
 

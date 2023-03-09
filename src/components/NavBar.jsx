@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Cog8ToothIcon, EnvelopeIcon, FolderIcon } from "@heroicons/react/24/outline"
 
-const NavBar = ({ toggleExplorer, explorerOpen }) => {
+const NavBar = ({ toggleExplorer, explorerOpen, toggleTheme }) => {
   const { t, i18n } = useTranslation()
 
   const WithTooltip = ({ children, className, text }) => (
@@ -82,7 +82,7 @@ const NavBar = ({ toggleExplorer, explorerOpen }) => {
             divide-y
           ">
             <SettingOption disabled={false} onClick={toggleLanguage} text={t('navBar.switchLanguage')} />
-            <SettingOption disabled={true} onClick={null} text={t('navBar.switchTheme')} />
+            <SettingOption disabled={false} onClick={toggleTheme} text={t('navBar.switchTheme')} />
           </div>
         </Icon>
       </div>
