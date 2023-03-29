@@ -5,7 +5,7 @@ const FileFinder = ({tabs, selectedTab, setSelectedTab}) => {
   const [sourceActive, setSourceActive] = useState(true)
 
   return (
-    <div className="bg-fileFinder h-full w-72 min-w-fit border-r-1 border-gray-900 hidden md:block text-gray-500 py-1">
+    <div className="bg-fileFinder h-full w-72 min-w-fit border-r-1 border-gray-900 hidden md:block text-gray-500 py-1 shrink-0">
       <div className="mx-5 mt-2 mb-3 text-xs">EXPLORER</div>
       <button onClick={() => setSourceActive(old => !old)} className="flex items-center font-bold uppercase text-xs">
         <ChevronDownIcon className={'h-4 w-4 mx-1 transition duration-100 '.concat(sourceActive ? '' : '-rotate-90')} /> thmarinho

@@ -67,8 +67,9 @@ const Projects = () => {
   );
 
   return (
-    <div className="text-white flex flex-col h-full overflow-y-scroll lg:overflow-y-auto pt-_ md:pt-12">
+    <div className="text-white flex flex-col h-full overflow-y-scroll lg:overflow-y-auto pt-8 md:pt-12">
       <Title text={t('projects.title')} />
+      //TODO change card design
       <div className="flex-grow flex max-w-full mb-4 h-fit">
         <div className="h-full w-full lg:pb-10 px-2 md:px-4 lg:px-0 flex flex-col lg:flex-row overflow-y-scroll overflow-x-hidden lg:overflow-y-hidden lg:overflow-x-scroll gap-8">
           {projects.map((project, idx) => <Card key={idx} project={project} />)}
