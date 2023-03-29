@@ -1,9 +1,10 @@
 import { useTranslation } from "react-i18next";
 
 const Home = ({ navigate }) => {
-  const {t} = useTranslation()
+  const { t } = useTranslation()
 
   return (
+    // Using background image from https://unsplash.com/photos/f77Bh3inUpE
     <div className="h-full bg-hero bg-cover flex flex-col justify-center md:items-start text-white relative">
       <div className="absolute h-full w-full bg-black opacity-60"></div>
       <div className="z-10 p-8">
