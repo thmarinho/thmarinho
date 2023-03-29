@@ -78,7 +78,8 @@
     "backend": "Backend",
     "database": "Gestion des données",
     "test": "Tests",
-    "devops": "DevOps"
+    "devops": "DevOps",
+    "os": "Systèmes d'exploitation"
   },
   "projects": {
     "title": "Projets",

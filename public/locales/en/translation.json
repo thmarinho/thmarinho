@@ -79,7 +79,8 @@
     "protocol": "Protocols",
     "database": "Data handling",
     "test": "Tests",
-    "devops": "DevOps"
+    "devops": "DevOps",
+    "os": "Operating systems"
   },
   "projects": {
     "title": "Projects",

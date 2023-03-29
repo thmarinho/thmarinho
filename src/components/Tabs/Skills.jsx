@@ -24,6 +24,7 @@ const Skills = () => {
     ],
     database: [
       { name: 'GraphQl', icon: 'graphql.svg' },
+      { name: 'REST ', icon: 'rest.png' },
       { name: 'MongoDB', icon: 'mongo.svg' },
       { name: 'MySQL', icon: 'mysql.svg' },
       { name: 'Redis', icon: 'redis.svg' },
@@ -39,6 +40,11 @@ const Skills = () => {
       { name: 'Grafana', icon: 'grafana.svg' },
       { name: 'NGINX', icon: 'nginx.svg' },
     ],
+    os : [
+      {name: 'Linux', icon: 'linux.png' },
+      {name: 'MacOS', icon: 'macos.svg' },
+      {name: 'Windows', icon: 'windows.svg' },
+    ]
   }
 
   return (
